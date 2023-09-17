@@ -1,0 +1,102 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contianer {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10px;
+}
+.todo-app{
+    width:100%;
+    background: #fff;
+    margin:100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.todo-app h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex:1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+}
+button{
+    border:none;
+    outline: none;
+    background: #FF5945;
+    padding: 16PX 50PX;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:30px ;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width :28px;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/ios-filled/50/000000/unchecked-circle.png");
+    background-size:cover;
+    background-position:center;
+    top:12px;
+    left: 8px;
+
+}
+ul li.checked{
+    color: #888;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("/Users/adithyanca/Desktop/images/checked.png");
+    
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:40px;
+    height:40px;
+    font-size: 22px;
+    text-align:   center;
+    line-height: 40px;
+    border-radius: 50%;
+
+
+}
+
+ul li span:hover{
+    background-color: #edeef0 ;
+}
